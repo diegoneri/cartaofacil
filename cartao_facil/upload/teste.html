@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style type="text/css">
+	@import url(../css/relatorioEstrategia.css);
+</style>
+</head>
+<body>
+<!-- 
+/**
+ * Histórico de Alterações
+ * 
+ * id	Data		Responsável			EF Relacionada
+ * (0)	04/02/2010	Diego Neri			SE 6397 - Estratégia de Mães 2010
+ * Versão inicial.
+ */
+ 
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>-->
+
+
+<form id="frmRelatorioQuebraPresentes"
+	name="frmRelatorioQuebraPresentes"
+	action="exibirRelatorioQuebraPresentes.do"></form>
+<table width="80%" class="principal" cellpadding="6">
+	<tr style="border-bottom: 1px #d79900 solid;">
+		<td align="right" colspan="4">
+			<a class="linkExportarRelatorio" href="#">
+			<!-- <bean:message key="relatorio.estrategia.exportarRelatorio" /> -->exportar relatório
+			</a>
+		</td>
+	</tr>
+	<tr style="border-bottom: 1px #d79900 solid;">
+		<td align="left" colspan="2">
+			<span class="tituloRelatorio">
+				<!--<bean:message key="relatorio.estrategia.tituloQuebraPresentes" />-->
+				Relatório de Quebra de Presentes -
+			</span>
+			<span class="tituloRelatorioEC">
+				<!--<bean:write name="nomeEC" filter="false" /> --> 
+				GV CAULIM
+			</span>
+		</td>
+		<td align="right" colspan="2">
+		<select id="listaTiposRelatorios"
+			name="listaTiposRelatorios" >
+			<option>
+			<!-- <bean:message key="relatorio.estrategia.selecioneRelatorio" /> -->Selecione um relatório
+			</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>&nbsp;<a href="#"><img class="linkImagem" src="bt_ok_small.gif" onclick="selecionarValor(this)" id="btnOkTipoRelatorio"
+			name="btnOkTipoRelatorio" /></a></td>
+	</tr>
+	<tr valign="bottom" style="border-bottom: 3px #d79900 solid;">
+		<td colspan="2" align="right">
+		<select id="listaTipoEstruturaComercial"
+			name="listaTipoEstruturaComercial" >
+			<option>Selecione o tipo</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>&nbsp;<a href="#"><img class="linkImagem" src="bt_ok_small.gif" onclick="selecionarValor(this)" id="btnOkTipoEC"
+		  name="btnOkTipoEC"/></a>	</td>
+		<td align="left">
+		<select id="listaEstruturaComercial"
+			name="listaEstruturaComercial">
+			<option>Selecione a estrutura</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>&nbsp;<a href="#"><img class="linkImagem" src="bt_ok_small.gif" onclick="selecionarValor(this)"
+			 id="btnOkEC" name="btnOkEC" /></a></td>
+		<td align="right"><select id="listaCiclosEstrategia"
+			name="listaCiclosEstrategia" class="ciclo">
+			<option>Selecione um ciclo</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>&nbsp;<a href="#" class="linkImagem"><img class="linkImagem" src="bt_ok_small.gif" onclick="selecionarValor(this)" id="btnOkCiclosEstrategia"
+			name="btnOkCiclosEstrategia" align="bottom" /></a></td>
+
+	</tr>
+	<tr style="border-bottom: 3px #d79900 solid;">
+		<td colspan="4"><!-- Início do conteúdo -->
+		<table id="tabelaConteudoRelatorio" width="100%" cellpadding="3" cellspacing="4" class="conteudoRelatorio">
+			<!-- Títulos -->
+			<tr id="linhaTitulo">
+				<th width="12%" class="tituloColunaRelatorio"><bean:message key="relatorio.estrategia.codigo" />
+				Código</th>
+				<th width="25%" class="tituloColunaRelatorio"><bean:message key="relatorio.estrategia.descricao" />
+				Descrição</th>
+				<th width="15%" class="tituloColunaRelatorio"><bean:message key="relatorio.estrategia.pontuacao" />
+				Pontuação</th>
+				<th width="15%" class="tituloColunaRelatorio"><bean:message key="relatorio.estrategia.quantidade" />
+				Quantidade</th>
+				<th width="18%" class="tituloColunaRelatorio"><bean:message key="relatorio.estrategia.receita" />
+				Receita</th>
+				<th width="15%" class="tituloColunaRelatorio"><bean:message key="relatorio.estrategia.cota" /> Cota</th>
+			</tr>
+			<!-- Fim Títulos -->
+			<!-- Colunas de Conteúdo -->
+			<tr id="linhaConteudo" class="conteudoImparColunaRelatorio">
+				<!-- Fazer loop... -->
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<!-- Fazer loop... -->
+			</tr>
+			<tr id="linhaConteudo" class="conteudoParColunaRelatorio">
+				<!-- Fazer loop... -->
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<!-- Fazer loop... -->
+			</tr>			
+			<!-- Fim Colunas de Conteúdo -->
+		</table>
+		<!-- Fim do conteúdo --></td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto}
+
+#fundo{
+	float:clear;
+	font-family:Tahoma, "Trebuchet MS", Arial;
+}
+
+#titulo1{
+	float:left;
+}
+
+#titulo2{
+	float:left;
+}
+
+#titulo3{
+	float:left;
+}
+
+#logotipo{
+	float:left;
+}
+

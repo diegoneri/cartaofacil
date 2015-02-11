@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto}
+
+#fundo{
+	float:clear;
+}
+
+#titulo1{
+	float:left;
+}
+
+#titulo2{
+	float:left;
+}
+
+#titulo3{
+	float:left;
+}
+
+#logotipo{
+	float:left;
+}
+
+#usuario_logado{
+	text-align:right;
+}
+
+#logout{
+	color:#000000;
+	text-align:left;
+}
+
+#logout a:visited{
+	color:#000000;
+}
+
+logout a:active{
+	color:#000000;
+}
+
+logout a{
+	color:#000000;
+}

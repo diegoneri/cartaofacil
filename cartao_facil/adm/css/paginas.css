@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+html{
+	font-family: "Trebuchet MS";
+}
+
+#fundo_paginas{background:#FFFFFF;}
+
+#geral_paginas{
+	border:0px solid #00FF33;
+}
+
+#conteudo{
+	float:left;
+	margin-top:10px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-bottom:10px;
+	padding-bottom:10px;
+	width:720px;
+	height:540px;
+	border:0px solid #00FFCC;
+	overflow:auto;
+	background:#D1FFC1;
+	color:#000000;
+}
+
+
+#titulo_pg{
+	padding-top:10px;
+	padding-left:40px;
+	font-family:Tahoma, "Trebuchet MS", Arial;
+	text-shadow:#003300;
+	font-weight:300;
+}
+
+/*****************************
+Menu
+*****************************/
+#menu{
+	width:125px;
+	height:600px;
+	border:0px solid #FF0000;
+	float:left;
+	margin-right:20px;
+	margin-top:0px;
+	background:url(../imagens/bg_menu.gif) repeat-y;
+}
+
+ul{
+	margin:0px; 
+	padding:0px;
+}
+
+li{
+	list-style:none;
+	font-size:18px;
+	text-align:right;
+	font-variant:small-caps;
+}
+
+li a{
+	text-decoration:none; 
+	color:#000000;
+	border-bottom:1px solid #000000;
+	display:block;
+	padding:5px 15px 5px 0px;
+}
+
+li a:hover{
+	color:#CCCCCC;
+	background:#333333;
+	font-variant:small-caps;
+	border:1px solid #FFFFFF;
+}
+
+a{
+	color:#778899;
+	text-decoration:none; 
+}
+
+
+
+a:hover {
+	text-decoration:underline;
+}
+a:active {
+	text-decoration:underline;
+}

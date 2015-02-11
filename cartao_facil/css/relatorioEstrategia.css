@@ -1,0 +1,132 @@
+@CHARSET "ISO-8859-1";
+
+html{
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+select{
+	background-color:#FFFFFF;
+	color:#42403F;
+	font-size:11px;
+	font-weight:400;
+	border-color: scrollbar;
+	border-style: inset outset;
+	width:170px
+}
+
+select.ciclo{
+	background-color:#FFFFFF;
+	color:#42403F;
+	font-size:11px;
+	font-weight:400;
+	border-color: scrollbar;
+	border-style: inset outset;
+	width:140px
+}
+
+table.principal {
+	text-align: center;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	border: 3px #d79900 solid;
+	border-collapse: collapse;
+	border-spacing: 10px;
+	margin: 20px;
+	padding: 10px;
+	
+}
+
+span.tituloRelatorioEC{
+	font-size: 13px;
+	font-weight: bolder;
+	font-style: italic;
+	text-transform: uppercase;
+	color:#B64A2D;
+}
+
+span.tituloRelatorio{	
+	font-size: 13px;
+	font-weight: bolder;
+	color:#B64A2D;
+}
+
+a.linkExportarRelatorio{	
+	font-size: 12px;
+	font-weight: bolder;
+	font-variant:small-caps;
+	color:#B64A2D;
+}
+
+img.linkImagem{	
+	border: none;
+	position: relative;
+	top:3px;
+	height:16px;
+		
+}
+
+
+table.conteudoRelatorio { 
+	text-align: center;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	border: 3px #FdFaF8 solid;
+	border-collapse: collapse;
+	border-spacing: 10px;
+}
+/*
+.tituloRelatorio { 
+	text-align: center;
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #fafafa;
+	border-collapse: collapse;
+	border-spacing: 10px;
+}
+*/
+.tituloColunaRelatorio { 
+	border: 3px solid #FFFFFF;
+	background-color: #fff2ba;
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #404040;
+}
+
+tr.conteudoParColunaRelatorio { 
+	border: 3px solid #FFFFFF;
+	background-color: #FFFFE0;
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 11px;
+	color: #404040;
+}
+
+tr.conteudoImparColunaRelatorio { 
+	border: 3px solid #FFFFFF;
+	background-color: #FDF5E6;
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 11px;
+	color: #404040;
+}
+
+.alertBod p{ 
+	text-align: left;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 12px;
+	color: #404040;
+	background-color: #fafafa;
+	text-indent: -8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+} 
